@@ -5,7 +5,7 @@ import Form from './components/Form'
 function App() {
 
     return (
-        <div className="w-full h-[100vh] bg-neutral-blue-100 flex items-center justify-center">
+        <div className="bg-neutral-blue-100">
             <Form />
         </div>
     )
