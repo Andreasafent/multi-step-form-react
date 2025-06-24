@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+
+.font-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.primary-blue-950 {
+  color: #02295a;
+}
+.bg-primary-blue-950 {
+  background-color: #02295a;
+}
+
+.primary-purple-600 {
+  color: #473dff;
+}
+.bg-primary-purple-600 {
+  background-color: #473dff;
+}
+
+.primary-blue-300 {
+  color: #adbeff;
+}
+.bg-primary-blue-300 {
+  background-color: #adbeff;
+}
+
+.primary-blue-200 {
+  color: #bfe2fd;
+}
+.bg-primary-blue-200 {
+  background-color: #bfe2fd;
+}
+
+.primary-red-500 {
+  color: #ed3548;
+}
+.bg-primary-red-500 {
+  background-color: #ed3548;
+}
+
+
+.neutral-grey-500 {
+  color: #9699ab;
+}
+.bg-neutral-grey-500 {
+  background-color: #9699ab;
+}
+
+.neutral-purple-200 {
+  color: #d6d9e6;
+}
+.bg-neutral-purple-200 {
+  background-color: #d6d9e6;
+}
+
+.neutral-blue-100 {
+  color: #f0f5ff;
+}
+.bg-neutral-blue-100 {
+  background-color: #f0f5ff;
+}
+
+.neutral-blue-50 {
+  color: #fafbff;
+}
+.bg-neutral-blue-50 {
+  background-color: #fafbff;
+}
+
+.neutral-white {
+  color: #ffffff;
+}
+.bg-neutral-white {
+  background-color: #ffffff;
+}
+
+.bg-sidebar-desktop{
+  background-image: url('./assets/images/bg-sidebar-desktop.svg');
+}
