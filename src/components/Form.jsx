@@ -8,20 +8,24 @@ function Form() {
     const isDesktop = useMediaQuery('(min-width: 768px)');
 
     const steps = [
-        '1',
-        '2',
-        '3',
-        '4',
+        1,
+        2,
+        3,
+        4,
         'Thank you'
     ]
 
-    const [step, setStep] = useState('1');
+    const [step, setStep] = useState(1);
+
+    const handleNextStep = () => {
+        setStep(prevStep => prevStep + 1);
+    }
 
     useEffect(() => {
         console.log(`Is mobile: ${isDesktop}`);
     }, [isDesktop]);
 
-    useEffect(()=>{console.log(step);}, []);
+    useEffect(() => { console.log(step); }, []);
 
 
     return (
@@ -30,10 +34,19 @@ function Form() {
                 <div className="w-[900px] h-[600px] rounded-2xl shadow-md bg-white p-4">
                     <div className="flex  h-full">
                         <Sidebar
-                            step = {step}
+                            step={step}
                         />
 
-                        { step === '1' && <Step1Desktop /> }
+                        {
+                            step === 1 || step === 2 || step === 3 || step === 4 ? (
+                                <Step1Desktop
+                                    handleNextStep={handleNextStep}
+                                />
+
+                            ) : (
+                                null
+                            )
+                        }
                     </div>
                 </div>
             </div>

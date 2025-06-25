@@ -1,4 +1,7 @@
-function Step1Desktop() {
+import { useState } from "react";
+
+function Step1Desktop({ handleNextStep }) {
+    
     return (
         <div className="flex-grow-1 px-18 pt-10 pb-6 flex flex-col justify-between">
 
@@ -25,7 +28,7 @@ function Step1Desktop() {
             </form>
 
             <div className="self-end">
-                <button className="bg-primary-blue-950 text-white font-medium py-3 px-4 rounded-lg hover:bg-primary-purple-600 hover:cursor-pointer transition-colors duration-150">
+                <button className="bg-primary-blue-950 text-white font-medium py-3 px-4 rounded-lg hover:bg-primary-purple-600 hover:cursor-pointer transition-colors duration-150" onClick={handleNextStep}>
                     Next Step
                 </button>
             </div>
