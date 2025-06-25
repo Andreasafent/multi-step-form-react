@@ -33,6 +33,9 @@
 .bg-primary-purple-600 {
   background-color: #473dff;
 }
+.hover\:bg-primary-purple-600:hover {
+  background-color: #473dff;
+}
 
 .primary-blue-300 {
   color: #adbeff;
